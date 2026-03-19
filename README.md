@@ -105,9 +105,6 @@ Puede cambiar sin previo aviso.
 ## 🧩 Próximos pasos
 
 - Integración a Postgres/PostGIS
-- API de consulta
-- Versionado de datasets
-- Validación contra fuentes oficiales
 
 ---
 
