@@ -1,65 +1,116 @@
-# 🇦🇷 Codigos Postales Argentina (Correo Argentino + CABA)
+# 🇦🇷 Codigos Postales Argentina
 
-Dataset actualizado de códigos postales de la República Argentina
-generado a partir de:
+![Estado](https://img.shields.io/badge/status-activo-brightgreen)
+![Cobertura](https://img.shields.io/badge/cobertura-nacional-blue)
+![Python](https://img.shields.io/badge/python-3.10%2B-yellow)
 
--   Extracción directa del endpoint de Correo Argentino
--   Procesamiento específico para CABA mediante dataset auxiliar
+Dataset reproducible de códigos postales de Argentina construido a partir de fuentes reales y procesos automatizados.
 
-------------------------------------------------------------------------
+---
 
-## 📦 Estructura del repositorio
+## 🚀 Qué incluye
 
-. ├── provincias/ │ ├── localidades_2026.py │ └──
-localidades_cp_maestro.csv │ ├── caba/ │ ├── caba_2026.py │ ├──
-tabla_ciudad_bsas.csv │ └── caba_codigos_postales.csv │ └── README.md
+✔ Cobertura nacional  
+✔ Código postal (CPA)  
+✔ Provincia (normalizada)  
+✔ Partido / Departamento  
+✔ Municipio  
+✔ Coordenadas (cuando disponibles)  
+✔ Pipeline reproducible  
 
-------------------------------------------------------------------------
+---
 
-## 📍 Provincias
+## 📦 Estructura
 
-Script: provincias/localidades_2026.py
+```
+provincias/
+  ├── localidades_gen_correo_ar.py
+  └── localidades_cp_maestro.csv
 
-Fuente: - Endpoint interno de Correo Argentino
+caba/
+  ├── caba_desde_tabla.py
+  ├── tabla_ciudad_bsas.csv
+  └── caba_codigos_postales.csv
+```
 
-Salida: provincias/localidades_cp_maestro.csv
+---
 
-------------------------------------------------------------------------
+## ⚙️ Instalación
 
-## 🏙️ CABA
-
-Script: caba/caba_2026.py
-
-Fuente: - tabla_ciudad_bsas.csv
-
-Salida: caba/caba_codigos_postales.csv
-
-------------------------------------------------------------------------
-
-## ⚙️ Requisitos
-
-Python 3.10+
-
+```
 pip install pandas requests
+```
 
-------------------------------------------------------------------------
+---
 
-## ▶️ Ejecución
+## ▶️ Uso
 
-Provincias: cd provincias python localidades_2026.py
+### Provincias
+```
+cd provincias
+python localidades_2026.py
+```
 
-CABA: cd caba python caba_2026.py
+### CABA
+```
+cd caba
+python caba_2026.py
+```
 
-------------------------------------------------------------------------
+---
 
-## 🔍 Origen e inspiración
+## 🧠 Características técnicas
 
+- Parsing JSON real (no regex)
+- Manejo de UTF-8 BOM
+- Control de errores del endpoint
+- Reintentos automáticos
+- Throttling para evitar bloqueos
+- Normalización de estructura de datos
+
+---
+
+## 🔍 Fuente e inspiración
+
+Basado en:
 https://github.com/androdron/localidades_AR
 
-Autor original: Andrey Musatov
+¡Gracias... totales!
 
-------------------------------------------------------------------------
+Mejoras:
+- Actualización a Python moderno
+- Robustez del scraper
+- Separación CABA
+- Dataset consistente
+
+---
 
 ## ⚠️ Disclaimer
 
-Fuente no oficial. Validar para usos críticos.
+Fuente no oficial derivada de servicios de Correo Argentino.  
+Puede cambiar sin previo aviso.
+
+---
+
+## 📊 Estado del proyecto
+
+| Componente | Estado |
+|----------|--------|
+| Provincias | ✅ |
+| CABA | ✅ |
+| Integración | 🔜 |
+
+---
+
+## 🧩 Próximos pasos
+
+- Integración a Postgres/PostGIS
+- API de consulta
+- Versionado de datasets
+- Validación contra fuentes oficiales
+
+---
+
+## 📌 Autor
+
+Cristian Paez
