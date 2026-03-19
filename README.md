@@ -113,5 +113,6 @@ Puede cambiar sin previo aviso.
 
 ## 📌 Autores
 
-Cristian Paez
+Cristian Páez
+
 Daniela Ruíz
