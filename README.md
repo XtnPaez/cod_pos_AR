@@ -111,6 +111,7 @@ Puede cambiar sin previo aviso.
 
 ---
 
-## 📌 Autor
+## 📌 Autores
 
 Cristian Paez
+Daniela Ruíz
