@@ -119,8 +119,8 @@ La tabla territorial normalizada es un **derivado validado** construido a partir
 
 ## 🧩 Próximos pasos
 
+- Normalización y codificiación de localidades vs BAHRA
 - Integración a Postgres/PostGIS
-- Documentar pipeline de normalización territorial en caso de reconstruir queries/scripts intermedios
 
 ---
 
