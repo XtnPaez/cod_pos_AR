@@ -42,13 +42,6 @@ Dataset reproducible de códigos postales de Argentina construido a partir de fu
 
 Se incorpora una tabla derivada y validada que relaciona los códigos postales del listado base con una codificación territorial normalizada usando referencias del **IGN**.
 
-Este nuevo archivo permite trabajar directamente a nivel **provincia** y **departamento/partido**, lo que mejora el uso del código postal como clave auxiliar para:
-
-- geolocalización aproximada;
-- asignación territorial de registros;
-- joins con capas geográficas oficiales;
-- validación de datos cargados por usuarios.
-
 ---
 
 ## ⚙️ Instalación
